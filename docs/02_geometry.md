@@ -1,1 +1,2 @@
-# Geometry
+# *Geometry*
+## **Section 02**
