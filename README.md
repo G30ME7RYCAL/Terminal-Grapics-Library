@@ -49,28 +49,27 @@ int main() {
         std::cerr << "ERROR Initializing TGL: " << pullErr() << std::endl;
     }
 
-    TGLwindow SCREEN {WIDTH, HEIGHT, TGL_BLUE}; // Window surface with a blue background
+    TGLwindow SCR {100, 100, TGL_GRAY}; // Window surface with a gray background
 
-    if (!tglCreateWindow(SCREEN)) {
+    if (!tglCreateWindow(SCR)) {
         std::cerr << "ERROR Creating Window Array: " << pullErr() << std::endl;
     }
 
-    // Orange triangle
+    // Triangle
     TGLpolygon tri;
-    tri.vertices = { {5, 17}, {30, 2}, {55, 17} };
-    tri.TGL_Fill_Color   = TGL_ORANGE;
+    tri.vertices = { {10, 80}, {50, 20}, {90, 80} };
     tri.TGL_Border_Color = TGL_WHITE;
     tglRasterizePolygon(tri);
 
     // Shade with a horizontal red to blue gradient
     tglFragmentShader(tri, [](TGLpoint &p, TGLpolygon &) {
-        return lerp(TGL_RED, TGL_BLUE, p.x / 60.0f);
+        return lerp(TGL_RED, TGL_BLUE, (p.x - 10) / 80.0f);
     });
 
     // Draw triangle and display
-    tglDrawPolygon(tri, window);
-    tglUpdateDisplay(window); //write to the terminal
-    //tglUpdateDisplay(window, "image.ppm"); //or to a display image
+    tglDrawPolygon(tri, SCR);
+    tglUpdateDisplay(SCR); //write to the terminal
+    //tglUpdateDisplay(SCR, "image.ppm"); //or to a display image
 }
 ```
 
@@ -80,3 +79,13 @@ Build and run:
 g++ -std=c++17 -O2 sample.cpp -o sample
 ./sample
 ```
+
+## Documentation
+For in-depth documentation, check out `docs/` directory
+
+* **[Getting Started](docs/00-getting-started.md)**
+* **[Window & Viewport Management](docs/01-window-and-display.md)**
+* **[Colors & Styles](docs/02-colors-and-styles.md)**
+* **[Creating Shaders](docs/03-creating-shaders.md)**
+* **[Terminal Shading Language](docs/04-TSL.md)**
+* **[Error Handling](docs/05-error-handling.md)**
