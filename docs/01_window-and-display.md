@@ -1,2 +1,2 @@
-# *Window & Display*
-## **Section 01**
+# Window & Display
+## **_Section: 01_**
