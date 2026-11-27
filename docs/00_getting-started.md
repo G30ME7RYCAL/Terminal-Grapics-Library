@@ -76,4 +76,4 @@ g++ -std=c++17 -O2 sample.cpp -o sample
 ./sample
 ```
 
-![Sample](images/sample.png)
+![Sample](../images/sample.png)
