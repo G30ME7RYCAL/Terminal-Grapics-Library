@@ -15,7 +15,7 @@ A header-only C++ 2D graphics engine that renders to the terminal, has image exp
 | **Otimizations** | 1 : 2 character w : h aspect ratio for square pixels, terminal support for synchronized updates (`ESC[?2026h`) removes flicker (ignored if unsupported) |
 
 ## Installation
-TGL is header-only. Copy the folder inside your project directory or clone.
+**TGL is header-only.** Copy the folder inside your project directory or clone.
 ```sh
     git clone https://github.com/G30ME7RYCAL/Terminal-Grapics-Library.git
 ```
@@ -37,7 +37,7 @@ workspace/
         └── tgl_matrix.h
 ```
 
-the `TSL/` directory must sit *inside* of `TGL/` because `tgl.h` and `tgl_styles.h` include `"TSL/tsl.h"` by relative path.
+> the `TSL/` directory must sit *inside* of `TGL/` because `tgl.h` and `tgl_styles.h` include `"TSL/tsl.h"` by relative path.
 
 
 ## Getting started
