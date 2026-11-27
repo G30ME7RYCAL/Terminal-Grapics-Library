@@ -83,9 +83,9 @@ g++ -std=c++17 -O2 sample.cpp -o sample
 ## Documentation
 For in-depth documentation, check out `docs/` directory
 
-* **[Getting Started](docs/00-getting-started.md)**
-* **[Window & Viewport Management](docs/01-window-and-display.md)**
-* **[Colors & Styles](docs/02-colors-and-styles.md)**
-* **[Creating Shaders](docs/03-creating-shaders.md)**
-* **[Terminal Shading Language](docs/04-TSL.md)**
-* **[Error Handling](docs/05-error-handling.md)**
+* **[Getting Started](docs/00_getting-started.md)**
+* **[Window & Viewport Management](docs/01_window-and-display.md)**
+* **[Colors & Styles](docs/02_colors-and-styles.md)**
+* **[Creating Shaders](docs/03_creating-shaders.md)**
+* **[Terminal Shading Language](docs/04_TSL.md)**
+* **[Error Handling](docs/05_error-handling.md)**
