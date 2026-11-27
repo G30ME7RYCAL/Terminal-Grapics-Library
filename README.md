@@ -40,7 +40,7 @@ workspace/
 > the `TSL/` directory must sit *inside* of `TGL/` because `tgl.h` and `tgl_styles.h` include `"TSL/tsl.h"` by relative path.
 
 
-## Getting started
+## Your first triangle
 ```sample.cpp
 #include "TGL/tgl.h"
 
@@ -79,6 +79,8 @@ Build and run:
 g++ -std=c++17 -O2 sample.cpp -o sample
 ./sample
 ```
+
+![Sample](images/sample.png)
 
 ## Documentation
 For in-depth documentation, check out `docs/` directory
