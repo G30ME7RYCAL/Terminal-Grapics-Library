@@ -1,1 +1,2 @@
-# | 00 | Getting Started |
+# *Getting Started*
+## **Section 00**
