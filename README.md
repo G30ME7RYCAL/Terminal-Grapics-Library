@@ -5,11 +5,6 @@ A header-only C++ 2D graphics engine that renders to the terminal, has image exp
 
 ![Logo](images/logo.png)
 
-## Clone
-```
-    git clone https://github.com/G30ME7RYCAL/Terminal-Grapics-Library.git
-```
-
 ## Prerequisites
 | Requirement | Details |
 |---|---|
@@ -19,9 +14,14 @@ A header-only C++ 2D graphics engine that renders to the terminal, has image exp
 | **Display** | at least width of 2 * window width columns (pixels are 2 characters wide) |
 | **Otimizations** | 1 : 2 character w : h aspect ratio for square pixels, terminal support for synchronized updates (`ESC[?2026h`) removes flicker (ignored if unsupported) |
 
-## Filetree
+## Installation
+TGL is header-only. Copy the folder inside your project directory or clone.
+```sh
+    git clone https://github.com/G30ME7RYCAL/Terminal-Grapics-Library.git
 ```
-your-project/
+
+```
+workspace/
 ├── main.cpp
 └── TGL/
     ├── tgl.h              <- include this one
