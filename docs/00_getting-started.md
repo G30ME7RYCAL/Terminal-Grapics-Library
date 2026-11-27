@@ -1,2 +1,2 @@
-# *Getting Started*
-## **Section 00**
+# Getting Started
+## **_Section: 00_**
