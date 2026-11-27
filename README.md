@@ -1,9 +1,10 @@
+<div align="center">
+  <img src="images/logo.png" alt="Logo" width="200">
+</div>
 
 # Terminal Graphics Library
 
 A header-only C++ 2D graphics engine that renders to the terminal, has image export with pixmap and bitmap, and an HLSL-style shading language.
-
-![Logo](images/logo.png)
 
 ## Prerequisites
 | Requirement | Details |
