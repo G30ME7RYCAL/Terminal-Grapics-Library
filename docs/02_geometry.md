@@ -1,2 +1,2 @@
 # Geometry
-## **_Section: 02_**
+### **_Section: 02_**
