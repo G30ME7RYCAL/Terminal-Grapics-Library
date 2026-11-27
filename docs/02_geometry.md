@@ -1,2 +1,2 @@
-# *Geometry*
-## **Section 02**
+# Geometry
+## **_Section: 02_**
