@@ -5,7 +5,7 @@
 Every TGL program has to start with `tglInit()` to flush the terminal, reset styles, and prepare for output.
 <br><br>
 ## The `TGLwindow` class
-To draw anything in TGL, you must create a `TGLwindow` object with `TGL_Window_Width`, `TGL_Window_Height`, and `TGL_Window_Style`, (more on that in chapter 3). Once you created the object, initialize create the pixels and initialize values using `tglCreateWindow()` and pass it your `TGLwindow` object to initialize the window object for output.
+To draw anything in TGL, you must create a `TGLwindow` object with `TGL_Window_Width`, `TGL_Window_Height`, and `TGL_Window_Style`, (more on that in [Chapter 3](docs/03_colors-and-styles.md)). Once you created the object, initialize create the pixels and initialize values using `tglCreateWindow()` and pass it your `TGLwindow` object to initialize the window object for output.
 <br><br>
 ## Displaying your Window
 To display your window, call `tglUpdateDisplay()` and pass it your window. To output into an image file, pass it a file path which is either pixmap (.ppm) or bitmap (.bmp). Calling it multiple times will overwrite the previous output, creating a continuous animation.
