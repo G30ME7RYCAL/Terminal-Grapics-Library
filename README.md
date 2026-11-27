@@ -16,11 +16,10 @@ A header-only C++ 2D graphics engine that renders to the terminal, has image exp
 | **Compiler** | C++17 compiler (GCC 8+, Clang 7+, or MSVC 2019+) |
 | **Dependencies** | None, std only |
 | **Terminal** | Must support 24-bit truecolor ANSI escape codes (kitty, iterm2, Windows Terminal, GNOME Terminal, Kitty, Alacritty, WezTerm, VS Code's terminal, and most modern Linux terminals. |
-| **Display** | width of 2 * window width -- (pixels are 2 characters wide), 1 : 2 character w : h aspect ratio for square pixels |
-| **Otimizations** | Terminal support for synchronized updates (`ESC[?2026h`) removes flicker (ignored if unsupported) |
+| **Display** | at least width of 2 * window width columns (pixels are 2 characters wide) |
+| **Otimizations** | 1 : 2 character w : h aspect ratio for square pixels, terminal support for synchronized updates (`ESC[?2026h`) removes flicker (ignored if unsupported) |
 
 ## Filetree
-
 ```
 your-project/
 ├── main.cpp
