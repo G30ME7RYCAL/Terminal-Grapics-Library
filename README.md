@@ -63,6 +63,11 @@ int main() {
     tri.TGL_Border_Color = TGL_WHITE;
     tglRasterizePolygon(tri);
 
+    // Shade with a horizontal red to blue gradient
+    tglFragmentShader(tri, [](TGLpoint &p, TGLpolygon &) {
+        return lerp(TGL_RED, TGL_BLUE, p.x / 60.0f);
+    });
+
     // Draw triangle and display
     tglDrawPolygon(tri, window);
     tglUpdateDisplay(window); //write to the terminal
