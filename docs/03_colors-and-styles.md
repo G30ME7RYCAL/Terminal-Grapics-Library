@@ -1,2 +1,2 @@
-# *Colors & Styles*
-## **Section 03**
+# Colors & Styles
+## **_Section: 03_**
